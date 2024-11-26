@@ -1,0 +1,95 @@
+/* General styling */
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Header styling with Flexbox */
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #f4f4f9;
+}
+
+header h1 {
+    font-size: 35px;
+    margin-left: 20px;
+}
+
+/* Menu button and dropdown */
+.menu {
+    position: relative;
+    background-color: aliceblue;
+    color: #a1bfe2;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px 40px;
+    margin-right: 20px;
+    cursor: pointer;
+    text-align: center;
+}
+
+nav {
+    display: none; /* Hide the menu initially */
+    position: absolute;
+    top: 100%; /* Position the dropdown below the Menu button */
+    left: 0;
+    width: 100%;
+    background-color: #a1bfe2;
+}
+
+
+.menu:hover nav{
+    display:block;
+
+
+}
+
+nav a {
+    display: block;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-shadow: 4px 4px 6px rgb(115, 113, 140);
+}
+
+nav a:hover{
+    background-color: rgb(169, 217, 238);
+}
+
+main img {
+    width: 40%;
+    display: block;
+    margin: 30px auto 0;
+}
+
+
+.about-title {
+    text-align:center;
+    margin-top: 20px;
+    font-size: 40px;
+}
+
+.about-description {
+    text-align: center;
+    font-size: 30px;
+    margin: 20px;
+}
+
+footer {
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    background-color: #f4f4f9;
+}

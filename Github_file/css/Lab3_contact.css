@@ -1,0 +1,131 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url(https://i.ibb.co/HNVWFHv/portfolio-5.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+
+/* Header styling with Flexbox */
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #f4f4f9;
+}
+
+header h1 {
+    font-size: 35px;
+    margin-left: 20px;
+}
+
+/* Menu button and dropdown */
+.menu {
+    position: relative;
+    background-color: aliceblue;
+    color: #a1bfe2;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px 40px;
+    margin-right: 20px;
+    cursor: pointer;
+    text-align: center;
+}
+
+nav {
+    display: none; /* Hide the menu initially */
+    position: absolute;
+    top: 100%; /* Position the dropdown below the Menu button */
+    left: 0;
+    width: 100%;
+    background-color: #a1bfe2;
+}
+
+
+.menu:hover nav{
+    display:block;
+
+
+}
+
+nav a {
+    display: block;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-shadow: 4px 4px 6px rgb(115, 113, 140);
+}
+
+nav a:hover{
+    background-color: rgb(169, 217, 238);
+}
+
+
+.contact-container {
+    box-shadow: 4px 4px 6px rgb(115, 113, 140);
+    width: 400px;
+    padding: 40px;
+    background-color: #a1bfe2;
+    position: absolute;
+    left: 120px;
+    top: 180px;
+}
+
+.contact-container h2 {
+    color: #000000;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.contact-container p {
+    text-shadow: 2px 2px 5px rgb(75, 93, 133);
+    color: #ffffff;
+    font-size: 17px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+form {
+    margin-top: 20px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 95%;
+    padding: 8px;
+    margin: 5px 0;
+}
+
+button {
+    background-color: white;
+    color: #a1bfe2;
+    padding: 10px 15px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: rgb(202, 166, 243);
+    color:#ffffff;
+}
+
+
+footer {
+    position: fixed;
+    bottom: 0;
+    right: 5px;
+    text-align: right;
+}
